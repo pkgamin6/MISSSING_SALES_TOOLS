@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Alliance Support Tools</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-dot"></span> Alliance Support Tools</div>
+  <nav>
+    <button class="nav-btn active" data-view="home">Home</button>
+    <button class="nav-btn" data-view="missing">Missing Sales</button>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="view active">
+  <div class="hero card">
+    <div>
+      <span class="eyebrow">LOCAL BROWSER TOOLKIT</span>
+      <h1>Alliance Support<br><span>Utilities</span></h1>
+      <p>Standalone tools for OR# checking and frecno SQL generation.</p>
+      <div class="hero-actions">
+        <button class="primary" data-view="missing">Open Missing Sales</button>
+      </div>
+    </div>
+    <div class="hero-mark">A<span>/</span>T</div>
+  </div>
+</section>
+
+<section id="missing" class="view">
+  <div class="section-head"><div><span class="eyebrow">MISSING SALES</span><h2>Receipt & Frecno Tools</h2></div></div>
+  <div class="grid-4">
+    <button class="tool card" id="openMissing"><b>Check Missing OR#</b><small>Upload TXT, CSV, LOG, SQL or XLSX and detect sequence gaps.</small></button>
+    <button class="tool card" id="openLatest"><b>Generate Latest Frecno</b><small>Map old frecno values to a new sequential range.</small></button>
+    <button class="tool card" id="openFilter"><b>Frecno Filter SQL</b><small>Generate SELECT or DELETE queries using IN / NOT IN.</small></button>
+    <button class="tool card" id="openScripts"><b>Generate All Script</b><small>Show reusable support SQL reference scripts.</small></button>
+  </div>
+</section>
+
+</main>
+
+<div id="modal" class="modal" hidden><div class="modal-box"><button id="closeModal" class="close">×</button><h3 id="modalTitle"></h3><div id="modalBody"></div></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
